@@ -1,0 +1,75 @@
+@import "~antd/dist/antd.css";
+
+@font-face {
+  font-family: "Playfair Display SC", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+}
+
+.photo100prc {
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+}
+
+.imageThumbnail {
+  position: relative;
+  width: 90%;
+}
+
+.textAlignRight {
+  position: absolute;
+
+  text-align: justify;
+  left: 0;
+  height: 30%;
+  width: 85%;
+}
+
+.textAlignLeft {
+  position: absolute;
+  text-align: justify;
+  left: 10%;
+  height: 30%;
+  width: 85%;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.buttonUnderText {
+  position: relative;
+  top: 50px;
+}
+
+.modalS {
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 100px;
+  padding: 20%;
+  width: 90%;
+}
+
+.close {
+  color: Black;
+  float: right;
+}
+
+.close:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 180px;
+  line-height: 160px;
+  background: #fcfcfc00;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: rgb(241, 0, 0);
+}
