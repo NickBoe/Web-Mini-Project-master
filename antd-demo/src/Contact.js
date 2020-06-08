@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography } from 'antd';
 import { Popover, Col, Row } from 'antd';
 
 import "./Contact.css";
@@ -8,42 +7,46 @@ import phone from "./img/phoneIcon.png";
 import mail from "./img/mail.png";
 import instaIcon from "./img/instagram.png";
 import linkedinIcon from "./img/linkedin.png";
-import bckGround from "./img/prismatic.jpg";
 
-const { Title } = Typography;
-
-const instaContent = (
-<div className="InstaText">
-<h1><a href="https://www.instagram.com/"> Instagram</a></h1>
-</div>
-
-);
 function Contact() {
+
   return (
-      <div>
-      <div class="bgImage"></div>
-      <div class="cards">
-      <Row justify='center'>
+      // Enables Animate.css on the webpage
+     <div>
+        <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        </head>
+      <div class="bgImage"></div>       
+        <div class="icons">               
+      <Row justify='center'>              
       <Col span={6}>
         <Popover content={"+45 XX XX XX XX"} title="Telephone number">
+        <div class="animate__animated animate__backInLeft"> 
           <img alt="Phone" width="60%" src={phone}/>
-        </Popover> 
+          </div>
+        </Popover>
       </Col>
 
       <Col span={6}>
         <Popover content={"portfolio@gmail.com"} title="Email address">
+        <div class="animate__animated animate__backInDown">
           <img alt="Email" width="60%" src={mail} />
-        </Popover> 
+        </div>
+        </Popover>
       </Col>
 
       <Col span={6}>
         <a href="https://www.instagram.com/">
+        <div class="animate__animated animate__backInUp">
           <img alt="Social media networking" width="60%" src={instaIcon} />
+          </div>
         </a>
       </Col>
       <Col span={6}>
         <a href="https://www.linkedin.com/">
+        <div class="animate__animated animate__backInRight">
           <img alt="Social media networking" width="60%" src={linkedinIcon} />
+         </div>
         </a>
       </Col>
       </Row>

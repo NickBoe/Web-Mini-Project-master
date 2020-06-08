@@ -1,18 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import Button from "antd/es/button";
 import { Layout } from "antd";
-import { Typography } from "antd";
 import { Carousel } from "antd";
-
 import Face3d from "./img/model.jpg";
 import CowImg from "./img/AmagerFaelled_2.jpg";
 
-const { Header, Footer, Sider, Content } = Layout;
-const { Title } = Typography;
+const { Header, Content } = Layout;
 
-function Portfolio() {
+function CV() {
   return (
     <div className="App">
       <Layout>
@@ -51,10 +47,10 @@ function Portfolio() {
             <Content>Discover my art and projectwork.</Content>
           </Layout>
         </Layout>
-        <Header>Portfolio</Header>
+        <Header>CV</Header>
       </Layout>
     </div>
   );
 }
 
-export default Portfolio;
+export default CV;

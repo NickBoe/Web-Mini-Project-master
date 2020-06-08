@@ -1,20 +1,21 @@
 import React from "react";
 import Modal from "react-modal";
+import VideoPlayer from "./video";
+import VideoPlayer2 from "./video2";
 
 import "./Portfolio2.css";
 
 import { useState } from "react";
 import { Row, Col } from "antd";
 import { Button } from "antd";
-import { Layout } from "antd";
 import { Carousel } from "antd";
 
 import Face3d from "./img/model.jpg";
 import Face3d2 from "./img/model2.jpg";
-import CowImg from "./img/AmagerFaelled_2.jpg";
 import snail1 from "./img/Snail_0.jpg";
 import snail2 from "./img/Snail_3.jpg";
 import snail3 from "./img/Snail_1.jpg";
+import amagerStrand from "./img/amagerStrang.png";
 
 Modal.setAppElement("#root");
 
@@ -22,7 +23,6 @@ function Portfolio2() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalIsOpen2, setModalIsOpen2] = useState(false);
   const [modalIsOpen3, setModalIsOpen3] = useState(false);
-  const [modalIsOpen4, setModalIsOpen4] = useState(false);
 
   const modalStyle = {
     overlay: {
@@ -47,13 +47,21 @@ function Portfolio2() {
 
   return (
     <div>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+      </head>
       <Row>
         <Col span={16}>
-          <img
-            src={Face3d}
-            className="imageThumbnail"
-            alt="3d model of a face"
-          ></img>
+          <div class="animate__animated animate__fadeInLeft animate__delay-0.1s">
+            <img
+              src={Face3d}
+              className="imageThumbnail"
+              alt="3d model of a face"
+            ></img>
+          </div>
         </Col>
         <Col span={8}>
           <div className="textAlignRight" style={{ top: "20%" }}>
@@ -170,7 +178,7 @@ function Portfolio2() {
       <Row>
         <Col span={16}>
           <img
-            src={Face3d}
+            src={amagerStrand}
             className="imageThumbnail"
             style={{ top: "40px" }}
             alt="3d model of a face"
@@ -178,11 +186,42 @@ function Portfolio2() {
         </Col>
         <Col span={8}>
           <div className="textAlignRight" style={{ top: "35%" }}>
-            <h2>3D model in Blender</h2>
-            3D model of a face that is suppose to be a perfect example of
-            something to text allign lets see
+            <h2>Video Production</h2>
+            Specialised video productions, capturing emotional realisties. Can
+            provide videos in 4K.
             <div className="buttonUnderText">
-              <Button type="dashed">Read more</Button>
+              <Button type="dashed" onClick={() => setModalIsOpen3(true)}>
+                Read more
+              </Button>
+              <Modal
+                isOpen={modalIsOpen3}
+                onRequestClose={() => setModalIsOpen3(false)}
+                style={modalStyle}
+                className="textAlignCenter"
+              >
+                <div>
+                  <h2>Video Production</h2>
+                  <Carousel autoplay>
+                    <div>
+                      <VideoPlayer />
+                    </div>
+                    <div>
+                      <VideoPlayer2 />
+                    </div>
+                  </Carousel>
+
+                  <p style={{ padding: "60px" }}>
+                    I can provide basic video production and editing, my
+                    personal intrest lays in capturing the emotional realist of
+                    the situation without use of direct means of communication.
+                    Video above is a short etiude recorded on Amager Strand in
+                    the begining of the COVID19 lockdown.
+                  </p>
+                </div>
+                <Button type="dashed" onClick={() => setModalIsOpen3(false)}>
+                  Close
+                </Button>
+              </Modal>
             </div>
           </div>
         </Col>

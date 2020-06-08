@@ -24,15 +24,15 @@ function NavigationBar() {
         </Col>
         <Col span={6}>
           <h1>
-            <NavLink to="/portfolio" style={{ color: "black" }}>
-              PORTFOLIO
+            <NavLink to="/CV" style={{ color: "black" }}>
+              CV
             </NavLink>
           </h1>
         </Col>
         <Col span={6}>
           <h1>
             <NavLink to="/portfolio2" style={{ color: "black" }}>
-              PORTFOLIO2
+              PORTFOLIO
             </NavLink>
           </h1>
         </Col>
