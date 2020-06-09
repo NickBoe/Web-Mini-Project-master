@@ -3,10 +3,6 @@ import "./App.css";
 import { NavLink } from "react-router-dom";
 import { Row, Col, Divider } from "antd";
 
-const DemoBox = (props) => (
-  <p className={`height-${props.value}`}>{props.children}</p>
-);
-
 function NavigationBar() {
   return (
     <div>
