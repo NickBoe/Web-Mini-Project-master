@@ -12,9 +12,9 @@
 
 
 .marginss{
-    position: relative;
+    position: absolute;
     top: 249px;
-    left: -9px;
+    left: 35.3%;
 }
 
 .marginss:hover{
@@ -50,19 +50,17 @@
 }
 
 .marginss2{
-    position: relative;
-    top: 249px;
-    left: -9px;
-   
+    position: absolute;
+    top: 354px;
+    left: 35.3%;  
 }
 
 .marginss3{
-    position: relative;
-    top: 249px;
-    left: -8px;
+    position: absolute;
+    top: 459px;
+    left: 35.3%;
     background-color: rgb(252, 233, 62);
     border: none;
-   
 }
 
 .textStuff{
