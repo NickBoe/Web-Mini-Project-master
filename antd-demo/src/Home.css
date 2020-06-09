@@ -12,8 +12,9 @@
 
 
 .marginss{
-      margin-top: 13.1%;
-      margin-left: -1%;
+    position: relative;
+    top: 250px;
+    left: -9px;
 }
 
 .marginss:hover{
@@ -49,14 +50,16 @@
 }
 
 .marginss2{
-    margin-top: 0px;
-    margin-left:-16px;
+    position: relative;
+    top: 250px;
+    left: -9px;
    
 }
 
 .marginss3{
-    margin-top: 0px;
-    margin-left:-16px;
+    position: relative;
+    top: 250px;
+    left: -9px;
     background-color: rgb(252, 233, 62);
     border: none;
    

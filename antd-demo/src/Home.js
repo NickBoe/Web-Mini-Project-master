@@ -19,7 +19,7 @@ function Home() {
       <div class="pcImage"></div>
       <div>
         <div class="animate__animated animate__fadeInDown">
-          <NavLink to="/CV" > <Button  type="primary" className = "marginss" style={{height: '105px', width : '540px'}} size="lg">
+          <NavLink to="/CV" > <Button  type="primary" className ="marginss" style={{height: '105px', width : '540px'}} size="lg">
           <Text strong  className = "textStuff"> CV </Text>
           </Button>  </NavLink>
         </div>
