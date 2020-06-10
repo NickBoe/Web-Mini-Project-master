@@ -204,7 +204,7 @@ function Portfolio2() {
               >
                 <div>
                   <h2>Video Production</h2>
-                  <Carousel afterChange={onChange}>
+                  <Carousel autoplay='false'>
                     <div>
                       <VideoPlayer />
                     </div>
