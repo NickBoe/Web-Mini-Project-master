@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 import "./Home.css";
 
-const { Text} = Typography;
+const { Text } = Typography;
 
 function Home() {
   return (
@@ -19,7 +19,7 @@ function Home() {
         <div class="animate__animated animate__fadeIn">
           <NavLink to="/CV"> 
           <Button  type="primary" className ="marginss" 
-          style={{height: '105px', width : '540px'}} size="lg">
+          style={{height: '105px', width : '540px'}}>
           <Text strong  className = "textStuff"> CV </Text>
           </Button>  
           </NavLink>
@@ -30,7 +30,7 @@ function Home() {
         <div class="animate__animated animate__fadeIn">
           <NavLink to="/portfolio2" > 
           <Button type="danger" className = "marginss2" 
-          style={{height: '105px', width : '540px'}} size="lg">
+          style={{height: '105px', width : '540px'}}>
           <Text strong className = "textStuff" > Portfolio </Text>
           </Button> </NavLink>
         </div>
@@ -39,8 +39,8 @@ function Home() {
       <div>
         <div class="animate__animated animate__fadeIn">
           <NavLink to="/contact" > 
-          <Button type="warning" className = "marginss3" 
-          style={ {background: "yellow"}, {height: '105px', width : '541px'}} size="lg">
+          <Button type="primary" className = "marginss3" 
+          style={ {background: "yellow"}, {height: '105px', width : '541px'}}>
           <Text strong className = "textStuff" > Contact & Social Media</Text>
           </Button> </NavLink>
         </div>

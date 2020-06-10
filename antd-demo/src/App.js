@@ -13,7 +13,6 @@ function App() {
     <div className="App">
       <NavigationBar />
       <Route exact path="/" component={Home} />
-      <Route exact path="/CV" component={CV} />
       <Route exact path="/portfolio2" component={Portfolio2} />
       <Route exact path="/contact" component={Contact} />
     </div>
