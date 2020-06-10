@@ -113,7 +113,7 @@ function Portfolio2() {
         <Col span={8}>
           <div className="textAlignLeft" style={{ top: "20%" }}>
             <h2>Snail Photography</h2>
-            Whose cow is that? I think I know. Its owner is quite happy though.
+            Whose snail is that? I think I know. Its owner is quite happy though.
             Full of joy like a vivid rainbow, I watch her laugh. I cry hello.
             <div className="buttonUnderText">
               <Button type="dashed" onClick={() => setModalIsOpen2(true)}>
@@ -151,8 +151,8 @@ function Portfolio2() {
                     </div>
                   </Carousel>
 
-                  <p style={{ padding: "60px" }}>
-                    3D model of a face that is suppose to be a perfect example
+                  <p style={{ padding: "20px" }}>
+                    Snail that is suppose to be a perfect example
                     of something to text allign lets see. There is more and more
                     and more and more text about this.
                   </p>
