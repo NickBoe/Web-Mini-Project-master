@@ -10,10 +10,6 @@ const { Text } = Typography;
 function Home() {
   return (
     <div>
-        <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-        </head>
-
       <div class="pcImage">   
       <div>
         <div class="animate__animated animate__fadeIn">

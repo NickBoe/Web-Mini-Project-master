@@ -45,15 +45,9 @@ function Portfolio2() {
 
   return (
     <div>
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-        />
-      </head>
       <Row>
         <Col span={16}>
-          <div class="animate__animated animate__fadeInLeft animate__delay-0.1s">
+          <div class="animate__animated animate__fadeInLeft">
             <img
               src={Face3d}
               className="imageThumbnail"

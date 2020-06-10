@@ -13,9 +13,6 @@ function Contact() {
   return (
       // Enables Animate.css on the webpage
      <div>
-        <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-        </head>
       <div class="bgImage"></div>       
       <div class="icons">               
       <Row justify='center'>              
