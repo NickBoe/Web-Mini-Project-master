@@ -14,6 +14,8 @@
 
 .icons {
     padding-top: 250px;
+    padding-bottom: 650px;
     opacity: 0.95;
+    overflow: hidden
 }
 

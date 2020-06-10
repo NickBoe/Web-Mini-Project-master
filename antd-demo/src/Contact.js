@@ -17,7 +17,7 @@ function Contact() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         </head>
       <div class="bgImage"></div>       
-        <div class="icons">               
+      <div class="icons">               
       <Row justify='center'>              
       <Col span={6}>
         <Popover content={"+45 XX XX XX XX"} title="Telephone number">
