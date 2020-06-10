@@ -17,6 +17,11 @@ import snail2 from "./img/Snail_3.jpg";
 import snail3 from "./img/Snail_1.jpg";
 import amagerStrand from "./img/amagerStrang.png";
 
+function onChange(a, b) {
+  console.log(a, b);
+}
+
+
 function Portfolio2() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalIsOpen2, setModalIsOpen2] = useState(false);
@@ -199,7 +204,7 @@ function Portfolio2() {
               >
                 <div>
                   <h2>Video Production</h2>
-                  <Carousel autoplay>
+                  <Carousel afterChange={onChange}>
                     <div>
                       <VideoPlayer />
                     </div>
