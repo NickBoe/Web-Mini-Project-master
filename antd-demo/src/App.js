@@ -3,7 +3,6 @@ import "./App.css";
 import { Route } from "react-router-dom";
 
 import Home from "./Home";
-import CV from "./CV";
 import Portfolio2 from "./Portfolio2";
 import Contact from "./Contact";
 import NavigationBar from "./NavigationBar";
